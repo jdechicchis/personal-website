@@ -15,13 +15,13 @@ jobs:
   check:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Dependencies
-        run: npm install
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
       - name: Check Code Format
         run: npm run format
       - name: Run Linter
