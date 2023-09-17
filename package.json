@@ -16,8 +16,8 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "remark": "^14.0.3",
-    "remark-html": "^15.0.2"
+    "react-markdown": "^8.0.7",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "engines": {
     "node": ">=18"
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
+    "@types/react-syntax-highlighter": "^15.5.7",
     "autoprefixer": "^10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
