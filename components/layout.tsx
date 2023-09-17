@@ -18,10 +18,7 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Joseph's personal website"
-        />
+        <meta name="description" content="Joseph's personal website" />
         <meta name="og:title" content={siteTitle} />
       </Head>
       <header className={styles.header}>
