@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import Navbar from "./navbar";
 
 const name = "Joseph DeChicchis";
 export const siteTitle = "Next.js Sample Website";
@@ -15,12 +13,22 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Joseph's personal website" />
         <meta name="og:title" content={siteTitle} />
       </Head>
+      <Navbar />
+      <div className="p-4 mx-auto max-w-4xl">
+        <main>{children}</main>
+      </div>
+    </>
+  );
+}
+
+//className={styles.container}>
+/*
       <header className={styles.header}>
         {home ? (
           <>
@@ -54,12 +62,4 @@ export default function Layout({
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
-    </div>
-  );
-}
+      */
