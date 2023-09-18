@@ -56,16 +56,31 @@ export default function Navbar() {
             </div>
           </div>
           <ul className="flex-col py-4">
-              <Link href="/">
-                <li onClick={() => setMenuOpen(false)} className="text-xl hover:border-b py-2">Home</li>
-              </Link>
-              <Link href="/posts">
-                <li onClick={() => setMenuOpen(false)} className="text-xl hover:border-b py-2">Blog</li>
-              </Link>
-              <Link href="/repos">
-                <li onClick={() => setMenuOpen(false)} className="text-xl hover:border-b py-2">Repos</li>
-              </Link>
-            </ul>
+            <Link href="/">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-2 text-xl hover:border-b"
+              >
+                Home
+              </li>
+            </Link>
+            <Link href="/posts">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-2 text-xl hover:border-b"
+              >
+                Blog
+              </li>
+            </Link>
+            <Link href="/repos">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-2 text-xl hover:border-b"
+              >
+                Repos
+              </li>
+            </Link>
+          </ul>
         </div>
       </div>
     </nav>

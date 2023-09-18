@@ -20,7 +20,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
       </Head>
       <Navbar />
-      <div className="p-4 mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl p-4">
         <main>{children}</main>
       </div>
     </>

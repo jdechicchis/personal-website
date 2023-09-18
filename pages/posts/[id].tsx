@@ -52,12 +52,13 @@ export default function Post({
               return !inline && match ? (
                 <SyntaxHighlighter
                   {...props}
-                  children={String(children).replace(/\n$/, "")}
                   style={PrismStyle}
                   language={match[1]}
                   PreTag="div"
                   className="rounded"
-                />
+                >
+                  {String(children).replace(/\n$/, "")}
+                </SyntaxHighlighter>
               ) : (
                 <code {...props} className={className}>
                   {children}
